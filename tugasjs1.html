@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Authentication</title>
+</head>
+<style>
+    * {
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .login {
+        width: 63vh;
+    }
+    .form {
+        background-color: cornflowerblue;
+        border: black 1px solid;
+        width: 100vh;
+    }
+    input {
+        width: 50vh;
+    }
+</style>
+<script>
+
+    function Login(){
+    var done=0;
+    var username=document.login.username.value;
+    username=username.toLowerCase();
+    var password=document.login.password.value;
+    password=password.toLowerCase();
+    if (username=="muti21170ti" && password=="11470110221170") { alert("selamat anda berhasil"); }
+    else 
+    if (done==0) { alert("Invalid login"); }
+    }
+    
+</script>
+<body>
+    <form name=login class="form">
+    Username : <input type=text name=username>
+    <br>
+    Password : <input type=text name=password>
+    <br>
+    <input type=button value="Login" onClick="Login()" class="login" >
+    </form>
+</body>
+</html>
